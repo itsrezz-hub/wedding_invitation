@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#BC8887" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Pernikahan Aan & Zani</title>
+
+    <meta property="og:title" content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020">
+    <meta property="og:description" content="Undangan Pernikahan Sherly & Daeng - Sabtu, 21 Maret 2020 di RM Pondok Kenanga, Jakasampurna Bekasi">
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:image" content="https://sherly.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
+    <meta property="og:url" content="http://sherly.dae.ng/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+    <!-- Begin Script for Countdown -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23064379-20');
+    </script>
+    <!-- Begin Script for Countdown -->
+
+    <!-- Github Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div id="audio-container">
+      <audio id="song" muted loop>
+        <source src="save-and-sound.mp3" type="audio/mp3">
+      </audio>
+
+      <div id="play-alert" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index: 10000; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; width: 70px; height: 70px; cursor: pointer;">
+        <div id="play-icon" style="font-size: 36px; color: #BC8887; width: 40px; height: 40px; border-radius: 50%; background-color: #f5f5f5; display: flex; justify-content: center; align-items: center; user-select: none;">&#9658;</div>
+      </div>
+    </div>
+    <script>
+      const audio = document.getElementById('song');
+      const playAlert = document.getElementById('play-alert');
+      const playIcon = document.getElementById('play-icon');
+
+      function playAudio() {
+        audio.muted = false;
+        audio.play().then(() => {
+          playAlert.style.display = 'none';
+          localStorage.setItem('audioPlayed', 'true');
+        }).catch((e) => {
+          console.log('Audio play failed:', e);
+        });
+      }
+
+      playIcon.addEventListener('click', playAudio);
+
+      window.addEventListener('load', () => {
+        if (localStorage.getItem('audioPlayed') === 'true') {
+          audio.muted = false;
+          audio.play().catch(() => {
+            playAlert.style.display = 'flex';
+          });
+          // Keep alert hidden if audio plays successfully
+          playAlert.style.display = 'none';
+        } else {
+          playAlert.style.display = 'flex';
+        }
+      });
+    </script>
+
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/favicon.png" alt="Flower" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Waktu
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Lokasi
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang-sherly-daeng">
+                  Wedding Galery
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Konfirmasi">
+                  Konfirmasi
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Undangan Pernikahan</h1>
+            <h2 class="title">Aan & Zani</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+                Sabtu, 24 Mei 2025 
+                </br>
+                Jl. poros galesong kota (Depan bank Sulselbar)
+                </br>
+                Kec.galesong Kab.Takalar
+              
+            </h4>
+          </div>
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="hitungmundur" >
+              <li><span class="days">13</span><p class="days_text">Hari</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">18</span><p class="hours_text">Jam</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">23</span><p class="minutes_text">Menit</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">25</span><p class="seconds_text">Detik</p></li>
+            </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '05/24/2025 10:00:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 07/27/2025 17:00:00
+                offset: +7, // TODO Your Timezone Offset
+                day: 'Hari',
+                days: 'Hari'
+              }, function () {
+                alert('Done!');
+              });
+            </script>  
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Waktu</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Lokasi</a>
+                  </li>
+                  <li>
+                    <a href="#Konfirmasi">Konfirmasi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+    <!-- Begin regular-section-->
+     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+        </div>
+
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          Assalamu'alaikum Warahmatullahi Wabarakatuh.
+          <br />
+          Maha Suci Allah tuhan semesta alam yang telah menciptakan makhluk-Nya berpasang-pasangan. Dengan memohon ridha
+          <br />
+          dan rahmat Allah SWT. Kami dengan rasa syukur yang mendalam bermaksud 
+          <br />
+          membagikan kabar gembira dengan diselenggarakan acara pernikahan putera-puteri kami :
+        </p>
+
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            Muh Alif annur
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+            Zamzani Almunawarah
+          </div>
+           
+        </div>
+        <span class="space40px"></span>
+        <!-- Removed pink flower image before dalil -->
+        <!-- <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+        </div> -->
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+      <!-- End regular-section-->    
+      
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">W a k t u</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div
+              class="column is-4 has-vertically-aligned-content">
+            
+              <p class="is-larger has-text-centered">
+                  <div class="waktu tanggal-angka has-text-centered">24</div>
+                  <div class="waktu tanggal-bulan has-text-centered">Mei 2025</div>
+              </p>
+            
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+            
+              <p class="waktu is-larger has-text-centered">
+                Hari
+                <br>
+                <strong>Sabtu</strong>
+              </p>
+            
+            </div>
+
+            <div class="column is-4 has-vertically-aligned-content">
+              
+              <h1 class="waktu is-larger has-text-centered">
+                Resepsi:
+                <br>
+                <strong>19.00  - 21.00 WITA</strong>
+              </h1>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="space40px"></div>
+          </a>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <div class="space40px"></div>
+      <section class="section-darker" id="lokasi" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered lks">L o k a s i</h1>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Kediaman Mempelai Pria</strong>
+              <br>
+              Jl. poros galesong kota (Depan bank Sulselbar)
+              <br>
+              Kec.galesong Kab.Takalar
+              <br>
+            </p>
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d248.29012635142536!2d119.36682160647977!3d-5.3184096998505686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1746778245211!5m2!1sid!2sid"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://maps.app.goo.gl/oJ4QRMxjNyxVFP3T7"
+            class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+            <div class="space40px"></div>
+            <div class="space40px"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang Sherly and Daeng -->
+      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+        <div class="container">
+          <div class="columns is-multiline">  
+          <div class="column has-text-centered is-12 prolog">          
+      <div class="space40px"></div>
+      <body>
+
+       </body>
+
+
+          <!-- IMAGES -->
+          <div class="space40px"></div>
+            <!-- Removed duplicate flower image above dalil -->
+            <!-- <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+            </div> -->
+
+            <section class="section-light has-text-centered" style="max-width: 700px; margin: 0 auto; font-style: italic; font-size: 1.1rem; color: #555;" data-aos="fade-up" data-aos-easing="linear">
+              <p>
+                "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ"
+              </p>
+              <p>
+                "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."
+              </p>
+              <p style="font-weight: bold; margin-top: 10px;">(QS. Ar-Rum: 21)</p>
+            </section>
+
+            <div class="space40px"></div>
+            <div class="space40px"></div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Tentang Sherly dan Daeng -->
+      <div class="space40px"></div>
+      <div class="space40px"></div>
+      <!-- Begin Konfirmasi Content -->
+      <section class="section-dark html2" id="Konfirmasi">
+        <div class="container">
+          <div class="columns is-multiline">          
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami
+                <br>
+                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
+                memberikan doa restu.
+                <br>
+                <br>
+                Jika bisa hadir kami tunggu konfirmasinya, 
+                <br>
+                Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
+                <br> 
+                semoga bisa berjumpa di lain kesempatan
+                <br>
+                <br>
+                Stay safe & jaga kesehatan ya :)
+                </p>
+     
+              <a href="https://api.whatsapp.com/send/?phone=6289518450440&text=Nama%20%3A%0AAlamat%20%3A%0AStatus%20%3A%20Saya%20akan%20datang!" class="button btn-whatsapp" target="_blank" data-aos="zoom-in" style="margin-right: 10px;">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp;Saya Akan Hadir
+              </a>
+              <a href="https://api.whatsapp.com/send/?phone=6289518450440&text=Nama%20%3A%0AAlamat%20%3A%0AStatus%20%3A%20Maaf%20saya%20tidak%20bisa%20datang" class="button btn-whatsapp" target="_blank" data-aos="zoom-in" style="background-color: red; border-color: red;">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp;Saya Tidak Bisa Hadir
+              </a>
+
+              
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              
+              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                Kami yang berbahagia,
+                <br>
+                aan & Zani
+              </p>
+
+            </div>
+ 
+         </div>
+        </div>
+      </section>
+      <!-- End Konfirmasi Content -->
+      
+
+           
+    
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+          <p class="has-vertically-align">2025 &copy itsrezz project</p>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
