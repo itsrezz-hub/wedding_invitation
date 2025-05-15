@@ -39,7 +39,7 @@ html {
 
 .hero {
   /* background-image: url(https://picsum.photos/id/25/1920/1080); */
-  background: linear-gradient(rgb(247 146 143 / 32%), #2e3f5b00), rgb(61 76 90) url(../image/bgjpg.jpg) no-repeat;
+  background: linear-gradient(rgb(247 146 143 / 32%), #2e3f5b00), rgb(61 76 90) url(../image/anzani.JPG) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
